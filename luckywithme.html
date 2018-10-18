@@ -33,18 +33,18 @@
         log("已经停止");
         return;
       }
-      if (balance == -1) {
-        log("等待检测余额");
-        setTimeout(bet, 1000);
-        return;
-      }
+      // if (balance == -1) {
+      //   log("等待检测余额");
+      //   setTimeout(bet, 1000);
+      //   return;
+      // }
 
       checkInputs();
 
-      if (balanceUnder > 0 && balance <= balanceUnder) {
-        log("余额达到限制边界，已经停止");
-        return;
-      }
+      // if (balanceUnder > 0 && balance <= balanceUnder) {
+      //   log("余额达到限制边界，已经停止");
+      //   return;
+      // }
 
       if (betamount == '') {
         log('请输入下注金额');
@@ -57,11 +57,11 @@
         return;
       }
 
-      if (!hasCPU) {
-        log(`CPU资源不足${cpuAvailable}，等待CPU释放后继续`);
-        setTimeout(bet, 1000);
-        return;
-      }
+      // if (!hasCPU) {
+      //   log(`CPU资源不足${cpuAvailable}，等待CPU释放后继续`);
+      //   setTimeout(bet, 1000);
+      //   return;
+      // }
 
       if (identity == null) {
         log("请登陆");
